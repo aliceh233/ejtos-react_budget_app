@@ -7,15 +7,17 @@ import Remaining from './components/Remaining';
 import ExpenseTotal from './components/ExpenseTotal';
 import AllocationForm from './components/AllocationForm';
 import ExpenseList from './components/ExpenseList';
+import Currency from './components/ChangeCurrency';
 const App = () => {
     return (
         <AppProvider>
             <div className='container'>
                     <h1> Company's Budget Allocation</h1>
                     <div className="row">
-                        <div className="col-sm-4"><Budget></Budget></div>
-                        <div className="col-sm-4"><Remaining></Remaining></div>
-                        <div className="col-sm-4"><ExpenseTotal></ExpenseTotal></div>
+                        <div className="col-sm-3"><Budget></Budget></div>
+                        <div className="col-sm-3"><Remaining></Remaining></div>
+                        <div className="col-sm-3"><ExpenseTotal></ExpenseTotal></div>
+                        <div className="col-sm-3"><Currency></Currency></div>
                     </div>
                     <h2>Allocation</h2>
                         <ExpenseList></ExpenseList>
